@@ -24,7 +24,7 @@ public class UserController {
     public String query(ModelMap model)
     {
         model.put("userList", userService.queryAll());
-        return "user/list";
+        return "views/user/list";
     }
 
     @RequestMapping("insert")
